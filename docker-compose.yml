@@ -26,6 +26,8 @@ services:
       - static:/frontend_static
   gateway:
     build: ./nginx/
+    depends_on:
+      - backend
     volumes:
       - static:/static/
       - media:/media/
