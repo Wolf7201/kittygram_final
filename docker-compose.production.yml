@@ -31,6 +31,6 @@ services:
       - backend
     volumes:
       - static_kit:/static/
-      - media_kit:/media:ro
+      - media_kit:/app/media/
     ports:
       - 9000:80
